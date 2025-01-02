@@ -7,7 +7,7 @@ async function getData() {
     
     const city = val1.value
     
-    const res = await fetch(`http://api.weatherstack.com/current?access_key=958329ac3b590f9a29bb3cbb4b4195ec&query=${city}`);
+    const res = await fetch(`https://api.weatherstack.com/current?access_key=958329ac3b590f9a29bb3cbb4b4195ec&query=${city}`);
     const data = await res.json()
     console.log(data);
 
